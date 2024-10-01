@@ -20,6 +20,8 @@ jobs:
           docker system prune -a -f
           docker volume prune -f
           df -h
+          sudo chmod -R 777 /mnt
+          ls -l /mnt
 
     - name: Pull Docker Images and Package
       run: |
