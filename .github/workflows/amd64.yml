@@ -19,6 +19,7 @@ jobs:
       run: |
           docker system prune -a -f
           docker volume prune -f
+          df -h
 
     - name: Pull Docker Images and Package
       run: |
